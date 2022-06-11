@@ -40,7 +40,7 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-th
 
 # Add luci-app-ssr-plus
 git clone https://github.com/kenzok8/openwrt-packages.git package/lean/kenzok8
-cp package/lean/kenzok8/luci-app-ssr-plus package/lean/luci-app-ssr-plus
+cp -r package/lean/kenzok8/luci-app-ssr-plus package/lean/luci-app-ssr-plus
 
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
