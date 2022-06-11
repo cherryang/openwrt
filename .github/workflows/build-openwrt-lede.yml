@@ -18,7 +18,7 @@ on:
       openwrt_kernel:
         description: "Choose kernel version."
         required: false
-        default: "5.15.25_5.10.100"
+        default: "5.15.25"
       openwrt_size:
         description: "Set the rootfs size(Unit: MiB)."
         required: false
@@ -37,7 +37,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
